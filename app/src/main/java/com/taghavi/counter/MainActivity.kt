@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         mainButton.setOnClickListener {
             mainTextView.append(mainEditText.text)
-            mainTextView.append("s\n")
+            mainTextView.append("\n")
+            mainEditText.setText("")
         }
     }
 }
