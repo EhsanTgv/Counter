@@ -16,7 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         mainButton.setOnClickListener {
             numTimeClicked += 1
-            mainTextView.append("\nThe Button got tapped $numTimeClicked time")
+            mainTextView.append("The Button got tapped $numTimeClicked time")
+            if (numTimeClicked != 1) {
+                mainTextView.append("s\n")
+            } else {
+                mainTextView.append("\n")
+            }
         }
     }
 }
